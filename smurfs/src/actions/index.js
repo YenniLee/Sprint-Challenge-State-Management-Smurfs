@@ -28,4 +28,22 @@ export const postSmurf = smurfData => dispatch => {
       dispatch({ type: POST_SMURF_SUCCESS, payload: res.data });
     })
     .catch(err => dispatch({ type: POST_SMURF_FAIL, payload: err }));
-};
+}
+
+// export const deleteSmurf = smurfId => dispatch => {
+//     dispatch({ type: FETCH_SMURFS_START })
+//     axios
+//         .delete(`http://localhost:3333/smurfs/${smurdId}`)
+//         .then(res => {
+//             dispatch({
+//                 type: FETCH_SMURFS_SUCCESS,
+//                 payload: res.data
+//             })
+//         })
+//         .catch(err => {
+//             dispatch({
+//                 type: FETCH_SMURFS_FAIL,
+//                 payload: err
+//             })
+//         })
+// };

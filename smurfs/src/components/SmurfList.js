@@ -8,9 +8,10 @@ function SmurfList({ fetchSmurfs, isFetching, smurfs, error }) {
     fetchSmurfs();
   }, [fetchSmurfs]);
 
-  if (isFetching) {
-    return <h2> Fetching Smurfs... </h2>;
-  }
+  // const handleDelete = e => {
+  //   e.preventDefault();
+  //   deleteSmurf(smurfs.id)
+  // }
 
   return (
     <div>
@@ -21,6 +22,7 @@ function SmurfList({ fetchSmurfs, isFetching, smurfs, error }) {
             <p>Name: {smurf.name}</p>
             <p>Age: {smurf.age}</p>
             <p>Height: {smurf.height}</p>
+            {/* <button onClick={handleDelete}>Remove</button> */}
           </div>
         );
       })}
@@ -38,5 +40,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { fetchSmurfs }
+  { fetchSmurfs}
 )(SmurfList);
