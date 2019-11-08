@@ -14,12 +14,11 @@ function SmurfList({ fetchSmurfs, isFetching, smurfs, error }) {
   // }
 
   return (
-    <div>
-      <h2>Smurf List</h2>
+    <div className='smurfBox'>
       {smurfs.map(smurf => {
         return (
-          <div key={smurf.id}>
-            <p>Name: {smurf.name}</p>
+          <div className='names' key={smurf.id}>
+            <h3>Name: {smurf.name}</h3>
             <p>Age: {smurf.age}</p>
             <p>Height: {smurf.height}</p>
             {/* <button onClick={handleDelete}>Remove</button> */}
