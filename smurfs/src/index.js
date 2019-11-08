@@ -1,6 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./components/App";
+import App from "./App";
+import { SmurfProvider } from './contexts';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+ReactDOM.render(
+    <SmurfProvider>
+        <App />
+    </SmurfProvider>,
+    document.getElementById("root")
+);
