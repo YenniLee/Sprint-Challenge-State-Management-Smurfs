@@ -13,7 +13,7 @@ const Smurf = ({ smurf, deleteSmurf }) => {
             <h3>Name: {smurf.name}</h3>
             <p>Age: {smurf.age}</p>
             <p>Height: {smurf.height}</p>
-            <button onClick={handleDelete}>Remove</button>
+            <button onClick={handleDelete}>X</button>
         </div>
     )
 };
