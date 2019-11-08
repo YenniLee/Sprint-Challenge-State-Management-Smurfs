@@ -10,7 +10,7 @@
     Application state is held in the store and can be accessed throughout the application (global), and commponent state is local inside the specific component and can be passed down to child components through props. It depends on how many components will need to share state, and the size/structure of the app. 
 
 4. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
-    'redux-thunk' is a middleware that allows us to make async actions in our app. When action-creators are called, the function either returns an action or another function(thunk). If it is an action, it is then sent to the reducer. If it tis a thunk, it will be passed to a dispatch function as an argument. This process is what makes async actions possible.
+    'redux-thunk' is a middleware that allows us to make async actions in our app. When action-creators are called, the function either returns an action or another function(thunk). If it is an action, it is then sent to the reducer. If it is a thunk, it will be passed to a dispatch function as an argument. This process is what makes async actions possible.
 
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
     I don't have a favorite state management system. It is still pretty confusing ...
