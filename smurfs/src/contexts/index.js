@@ -10,7 +10,7 @@ export const SmurfProvider = props => {
         axios
             .get('http://localhost:3333/smurfs')
             .then(res => {
-                console.log('res', res)
+                // console.log('res', res)
                 setSmurfs(res.data)
             })
             .catch(err => console.log('err', err))
